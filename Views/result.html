@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+</head>
+<body>
+    <script>
+        // let urlString=window.location.search;
+        // let paramString = urlString.split('?')[1];
+        // let queryString = new URLSearchParams(paramString);
+        // let word=URLSearchParams.has('name');
+        const urlParams = new URLSearchParams(window.location.search);
+        const name = urlParams.get('name');
+        document.write("Name:");
+        document.write(name);
+
+        const phoneNumber = urlParams.get('phoneNumber');
+        document.write("<br>Phone Number:");
+        document.write(phoneNumber);
+
+        const dob = urlParams.get('dob');
+        document.write("<br>Date of Birth:");
+        document.write(dob);        
+               
+        const email = urlParams.get('email');
+        document.write("<br>Email:");
+        document.write(email);        
+               
+        const designation = urlParams.get('Designation');
+        document.write("<br>Designation:");
+        document.write(designation);        
+               
+
+    </script>
+</body>
+</html>
