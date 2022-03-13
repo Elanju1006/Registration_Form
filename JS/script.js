@@ -19,20 +19,25 @@ function display(){
         const name = urlParams.get('name');
         document.write("Name:");
         document.write(name);
+        console.log(name);
 
         const phoneNumber = urlParams.get('phoneNumber');
         document.write("<br>Phone Number:");
         document.write(phoneNumber);
+        console.log(phoneNumber);
 
         const dob = urlParams.get('dob');
         document.write("<br>Date of Birth:");
-        document.write(dob);        
+        document.write(dob);     
+        console.log(dob);   
                
         const email = urlParams.get('email');
         document.write("<br>Email:");
         document.write(email);        
+        console.log(email);
                
         const designation = urlParams.get('Designation');
         document.write("<br>Designation:");
         document.write(designation);        
+        console.log(designation);
 }
