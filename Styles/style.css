@@ -7,7 +7,15 @@ input[type=text],[type=number],[type=date],[type=email],select {
   border-radius: 5px;
   box-sizing: border-box;
 }
-
+input[type=radio],select {
+  width: 10%;
+  padding: 12px 20px;
+  margin: 10px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
 input[type=button] {
   width: 10%;
   background-color: #4CAF50;
@@ -16,8 +24,9 @@ input[type=button] {
   margin: 8px 0;
   border: none;
   border-radius: 4px;
+  cursor: pointer;
 }
-
-.tab{
-  margin-left: 8px;
-}   
+#div1{
+  text-align: center;
+  margin-top: 25%;
+}
