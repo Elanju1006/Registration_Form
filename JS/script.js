@@ -2,8 +2,6 @@ function urlConstruct () {
     var name = document.getElementById("name").value;
     var number = document.getElementById("phoneNumber").value;
     var date = document.getElementById("dob").value;
-    const date1=new Date(date);
-    const da
     var email = document.getElementById("email").value;
     var maritalStatus=document.getElementById("Married").checked?"Married":"Single";
     var url = new URL("http://127.0.0.1:5501/Views/result.html");
