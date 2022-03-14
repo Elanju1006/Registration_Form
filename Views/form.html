@@ -8,21 +8,26 @@
     <link rel="stylesheet" href="../Styles/style.css">
   </head>
   <body>
-    <form action="../Views/result.html">
+    <form>
+      <!-- Name -->
      <label for="name">Name:</label></br>
       <input type="text" id="name" name="name"></br>
-
+      <!-- Phone Number -->
       <label for="Phone Number">Phone Number:</label></br>
       <input type="number" id="phoneNumber" name="phoneNumber"></br>
-
+      <!-- Date of Birth -->
       <label for="dob">Date of Birth:</label></br>
       <input type="date" id="dob" name="dob"></br>
+      <!-- Email -->
       <label for="email">Email:</label></br>
       <input type="text" id="email" name="email"></br>
+      <!-- Designation -->
       <label for="Designation">Designation:</label></br>
       <input type="text" id="Designation" name="Designation"></br>
-      <input type="submit" value="Submit"></br>
-      
+      <!-- Button -->
+      <input type="button" onclick="urlConstruct()" value="Submit"></br>
     </form>
+    <script src="../JS/script.js">      
+    </script>
   </body>
 </html>
