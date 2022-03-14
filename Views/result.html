@@ -8,10 +8,6 @@
 </head>
 <body>
     <script>
-        // let urlString=window.location.search;
-        // let paramString = urlString.split('?')[1];
-        // let queryString = new URLSearchParams(paramString);
-        // let word=URLSearchParams.has('name');
         const urlParams = new URLSearchParams(window.location.search);
         const name = urlParams.get('name');
         document.write("Name:");
