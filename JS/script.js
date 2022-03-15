@@ -72,4 +72,17 @@ result=()=>{
     document.write(key +":" +value + "<br>");
     }
   });
+  var load = document.querySelector('img');
+  var file    = document.querySelector('input[type=file]').files[0];
+  var reader  = new FileReader();
+
+  reader.onloadend = function () {
+    load.src = reader.result;
+  }
+
+  if (file) {
+    reader.readAsDataURL(file);
+  } else {
+    load.src = "";
+  }
 }
