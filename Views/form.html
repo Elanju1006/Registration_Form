@@ -12,27 +12,37 @@
     
     <div id="div1">
       <h2>Registration Form</h2>
-    <form>
+    <form action="../Views/result.html" onchange="validate()" >
       <!-- Name -->
      <label for="name">Name</label></br>
-      <input type="text" id="name" name="name"></br>
+      <input type="text" id="name" name="Name"></br>
       <!-- Date of Birth -->
       <label for="dob">Date of Birth:</label></br>
-      <input type="date" id="dob" name="dob"></br>
+      <input type="date" id="dob" name="Date"></br>
       <!-- Phone Number -->
       <label for="phoneNumber">Phone Number</label></br>
-      <input type="number" id="phoneNumber" name="phoneNumber"></br>
+      <input type="number" id="phoneNumber" name="Phone Number" maxlength="10"></br>
       <!-- Email -->
       <label for="email">Email:</label></br>
-      <input type="email" id="email" name="email"></br>
+      <input type="email" id="email" name="Email"></br>
+      <!-- Country -->
+      <label for="country">Country:</label></br>
+      <select name="Country" id="country">
+        <option value="India">India</option>
+        <option value="Pakisthan">Pakisthan</option>
+        <option value="China">China</option>
+        <option value="Nepal">Nepal</option>
+      </select></br></br>
       <!-- Marital Status -->
       <div id="maritalStatusId">
-      <label for="maritalStatus">Married/Single:</label>
-        <input type="radio" id="Married" checked="true" name="maritalStatus">Yes<input type="radio" id="Single" name="maritalStatus">No</br>
-      </div>
-      <!-- Button -->
-      <input type="button" onclick="urlConstruct()" value="Submit"></br>
-    </form>
+        <label for="maritalStatus">Married/Single:</label>
+          <input type="radio" id="Married" checked="true" name="maritalStatus">Yes<input type="radio" id="Single" name="maritalStatus">No</br>
+        </div></br></br>
+      <!-- Picture for Profile -->
+      <label for="img">Select picture:</label>
+      <input type="file" id="img" name="File" accept=".jpg,.jpeg">
+      <input id="submit" type="submit" disabled >
+    </form></br>
   </div>
   </body>
 </html>
